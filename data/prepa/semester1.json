@@ -1,0 +1,74 @@
+{
+  "semester":1,"title":"Semestre 1","source":"SyllabusParcours_CS_ISI(1).pdf",
+  "ues":[
+    {"id":"m1","title":"Mathématiques 1","code":"UEF110","credits":7,"ecues":[
+      {"id":"alg1","title":"Algèbre 1","code":"UEF111","credits":3.5,"chapters":[
+        {"title":"Nombres complexes","topics":["Introduction aux nombres complexes","Propriétés algébriques","Représentation géométrique"],"td":"TD1: Opérations et propriétés des nombres complexes - Racines n-ièmes des nombres complexes"},
+        {"title":"Vocabulaire ensembliste","topics":["Théorie des ensembles","Applications","Relation d’ordre","Relation d’équivalence","Classes d’équivalence","Exemple Z/nZ"],"td":"TD2: Opérations sur les ensembles - Relations et fonctions"},
+        {"title":"Arithmétique","topics":["Division euclidienne dans Z","Divisibilité","PGCD","PPCM","Théorème de Gauss","Théorème de Bezout","Algorithme d’Euclide","Théorème de Fermat"],"td":"TD3: Divisibilité et critères de divisibilité - Algorithme d’Euclide et congruences"},
+        {"title":"Polynômes et fractions rationnelles","topics":["Polynômes d’une variable à coefficients réels ou complexes","Racines","Formule de Taylor","Division euclidienne dans R[X], C[X]","Factorisation","PGCD/PPCM","Décomposition en éléments simples"],"td":"TD4: Opérations sur les polynômes - Fractions rationnelles"},
+        {"title":"Groupes, Anneaux et Corps","topics":["Groupes","Sous-groupes","Ordre d’un élément","Sous-groupe engendré","Groupes cycliques"],"td":"TD5: Étude des groupes - Anneaux et Corps"}
+      ]},
+      {"id":"ana1","title":"Analyse 1","code":"UEF112","credits":3.5,"chapters":[
+        {"title":"Suites numériques","topics":["Généralités","Convergence","Unicité de la limite","Opérations sur les suites","Suites monotones","Suites adjacentes","Suites particulières"],"td":"TD1: Convergence et limites des suites - Suites monotones"},
+        {"title":"Fonction numérique d’une variable","topics":["Continuité","Dérivabilité","Théorème des valeurs intermédiaires","Croissance","Théorème des accroissements finis","Fonctions hyperboliques","Fonctions trigonométriques réciproques","Développements limités","Formule de Taylor"],"td":"TD2: Étude de la continuité et de la dérivabilité - croissance et convexité"},
+        {"title":"Calcul de primitives","topics":["Primitives usuelles","Primitives des fractions rationnelles","Changement de variables","Intégration par parties","Applications"],"td":"TD3: Calcul des primitives - intégration par parties et substitution"},
+        {"title":"Équations différentielles","topics":["Équations différentielles du premier ordre","Variation de la constante","Équations différentielles linéaires du second ordre à coefficients constants","Méthodes analytiques"],"td":"TD4: Résolution des équations différentielles du premier ordre et applications"}
+      ]}
+    ]},
+    {"id":"i1","title":"Informatique 1","code":"UEF120","credits":7,"ecues":[
+      {"id":"asd1","title":"Algorithmique et structures des données","code":"UEF121","credits":3.5,"chapters":[
+        {"title":"Introduction à l’algorithmique","topics":["Définition et rôle des algorithmes","Étapes de résolution d’un problème"],"td":"TD1: Fondements des Structures Algorithmiques"},
+        {"title":"Fondements des Structures Algorithmiques","topics":["Variables, constantes et types simples","Expressions et opérateurs","Structures conditionnelles","Structures itératives"],"td":"TD1: Fondements des Structures Algorithmiques"},
+        {"title":"Modularité des Algorithmes","topics":["Décomposition modulaire","Procédures et fonctions","Passage par valeur et par adresse","Variables locales et globales","Portée des variables"],"td":"TD2: Modularité des Algorithmes"},
+        {"title":"Structures de Données Statiques","topics":["Tableaux unidimensionnels et bidimensionnels","Enregistrements"],"td":"TD3: Structures de Données Statiques : Tableaux et Enregistrement"},
+        {"title":"Algorithmes de Recherche et de Tri","topics":["Recherche séquentielle","Recherche par sentinelle","Recherche dichotomique","Tri par sélection","Tri par insertion","Tri à bulles","Tri rapide","Tri fusion"],"td":"TD4: Algorithmes de Recherche et de Tri"},
+        {"title":"Introduction aux Pointeurs et Structures Dynamiques","topics":["Adressage et déréférencement","Pointeurs et tableaux","Introduction à l’allocation dynamique","Passage par adresse"],"td":"TD5: Pointeurs et Structures Dynamiques"},
+        {"title":"Récursivité","topics":["Définition et principes","Itératif vs récursif","Factorielle","Fibonacci","Tours de Hanoï"],"td":"TD6: Récursivité"}
+      ]},
+      {"id":"prog1","title":"Atelier Programmation 1","code":"UEF122","credits":3.5,"chapters":[
+        {"title":"Introduction à la programmation C","topics":["Historique et caractéristiques du C","GCC, Code::Blocks, Visual Studio Code","Structure d’un programme","Compilation, édition de liens et exécution"],"tp":"TP1: Introduction au langage C et environnement de développement"},
+        {"title":"Types de données et Opérations","topics":["int, float, char, double","Déclaration et initialisation","Opérateurs arithmétiques, relationnels et logiques","Incrémentation et décrémentation","Expressions et affectations"],"tp":"TP2: Manipulation des types de données et opérations"},
+        {"title":"Structures de contrôle","topics":["if, if-else, switch-case","for, while, do-while","break, continue, goto"],"tp":"TP3: Structures de contrôle et boucles"},
+        {"title":"Tableaux et chaînes de caractères","topics":["Tableaux à une et plusieurs dimensions","Chaînes de caractères","strlen, strcpy, strcat"],"tp":"TP4: Tableaux et chaînes de caractères"},
+        {"title":"Fonctions en C","topics":["Définition et appel","Passage de paramètres","Portée globale, locale, statique","Fonctions récursives"],"tp":"TP5: Fonctions et modularité du code"},
+        {"title":"Pointeurs et allocation dynamique","topics":["Pointeurs","Pointeurs et tableaux","Pointeurs et chaînes","malloc, calloc, free"],"tp":"TP6: Pointeurs et allocation dynamique"},
+        {"title":"Enregistrements (Structures en C)","topics":["struct","Accès aux membres","typedef","Tableaux de structures","Pointeurs sur structures","Structures imbriquées"],"tp":"TP7: Structures"}
+      ]}
+    ]},
+    {"id":"p1","title":"Physique 1","code":"UEF130","credits":5,"ecues":[
+      {"id":"opt","title":"Optique","code":"UEF131","credits":2,"chapters":[
+        {"title":"Introduction à l’optique géométrique","topics":["Nature et caractéristiques de la lumière","Propagation rectiligne","Principe de Fermat","Approximation de l’optique géométrique"],"td":"TD1: Propagation rectiligne et modèles de la lumière"},
+        {"title":"Réflexion et réfraction","topics":["Lois de réflexion et réfraction","Réflexion totale interne","Miroirs plans et sphériques"],"td":"TD2: Réflexion et réfraction"},
+        {"title":"Dioptres et lentilles minces","topics":["Dioptres plans et sphériques","Lentilles convergentes et divergentes","Construction des images","Grandissement","Vergence et puissance"],"td":"TD3: Étude des dioptres et lentilles minces"},
+        {"title":"Systèmes optiques et instruments","topics":["Dispersion par un prisme","Association de lentilles","Défauts visuels","Loupe","Microscope","Télescope","Appareil photo"],"td":"TD4: Analyse des systèmes optiques"}
+      ]},
+      {"id":"mec","title":"Mécanique","code":"UEF132","credits":3,"chapters":[
+        {"title":"Cinématique du point matériel","topics":["Point matériel","Trajectoire et référentiels","Position, vitesse, accélération","Mouvement rectiligne uniforme","Mouvement uniformément accéléré"],"td":"TD1: Cinématique du point matériel"},
+        {"title":"Cinématique avec changement de référentiel","topics":["Référentiels galiléens et non galiléens","Composition des vitesses et accélérations","Applications aux satellites et véhicules en rotation"],"td":"TD2: Changement de référentiel"},
+        {"title":"Dynamique du point matériel","topics":["Principe d’inertie","Deuxième loi de Newton","Gravité","Frottement","Tension","Réaction normale"],"td":"TD3: Dynamique du point matériel"},
+        {"title":"Travail et énergie","topics":["Travail d’une force","Puissance mécanique","Énergie cinétique et potentielle","Théorème de l’énergie cinétique","Conservation"],"td":"TD4: Énergie et travail"},
+        {"title":"Résolution de problèmes pratiques","topics":["Statique et équilibre des forces","Mouvements oscillatoires simples","Études de cas et exercices globaux"],"td":"TD5: Énergie et travail"}
+      ]}
+    ]},
+    {"id":"e1","title":"Électricité 1","code":"UEF141","credits":5,"ecues":[
+      {"id":"cir","title":"Circuits électriques","code":"UEF141","credits":3,"chapters":[
+        {"title":"Les circuits électriques au régime continu – Notions de base","topics":["Courant, tension, résistance","Dipôles actifs et passifs","Lois de Kirchhoff","Superposition","Thévenin","Norton","Millman","Kennelly"],"td":"TD1: Notions de Base et Lois de Kirchhoff"},
+        {"title":"Circuit linéaire aux régimes transitoires","topics":["Relations courant-tension","Dipôles passifs linéaires en régime variable","Analyse énergétique des circuits transitoires"],"td":"TD3: Régime Transitoire dans les Circuits RLC"},
+        {"title":"Régime sinusoïdal","topics":["Impédance complexe","Représentation de Fresnel","Dipôles RLC","Puissance dissipée"],"td":"TD4: Régime Sinusoïdal et Impédances"},
+        {"title":"Filtres","topics":["Fonction de transfert","Diagrammes de Bode","Filtres passe-bas et passe-haut"],"td":"TD5: Étude des Filtres et Analyse en Fréquence"}
+      ]},
+      {"id":"em","title":"Electromagnétisme","code":"UEF142","credits":2,"chapters":[
+        {"title":"Lois générales de l’électromagnétisme","topics":["Introduction","Apport de Maxwell","Équations de Maxwell","Énergie électromagnétique"],"td":"TD1: Introduction aux équations de Maxwell"},
+        {"title":"Généralités sur les ondes","topics":["Notion d’onde","Nature des ondes","Types des ondes","Propagation"],"td":"TD2: Propagation des ondes"},
+        {"title":"Ondes électromagnétiques","topics":["Spectre électromagnétique","Propagation dans les milieux matériels","Propagation dans le vide","Nature de propagation"],"td":"TD4: Spectre électromagnétique"},
+        {"title":"Propagation libre des ondes électromagnétiques","topics":["Propagation sans obstacle","Réflexion","Réfraction","Diffraction","Interférence","Absorption / Dispersion"],"td":"TD3: Réflexion, réfraction et diffraction"}
+      ]}
+    ]},
+    {"id":"ls1","title":"Langues, Soft skills et ouverture socio-économique","code":"UET110","credits":6,"ecues":[
+      {"id":"fr1","title":"Français 1","code":"UET111","credits":2,"chapters":[{"title":"Situations de communication professionnelle","topics":["Variété de situations de communication professionnelle","Référentiel de compétences langagières"]},{"title":"Communication avec la hiérarchie et l’équipe","topics":["Courriels","Prise de parole","Échanges","Documents professionnels"]},{"title":"Communication avec les clients","topics":["Recueillir les besoins","Justifier une solution","Écoute active","Gérer les obstacles"]},{"title":"Atouts et axes d’amélioration","topics":["Communication verbale","Communication non verbale"]}]},
+      {"id":"2cn","title":"Culture et compétences numériques : 2CN","code":"UET112","credits":2,"chapters":[{"title":"Informations et données","topics":["Recherche","Veille","Fact-checking","Fake news","Organisation des fichiers","Métadonnées","Tableurs","Protection des données"]},{"title":"Communication et collaboration","topics":["Messagerie","Visio","Forums","Netiquette","Partage","Co-édition","Identité numérique"]},{"title":"Création de contenu numérique","topics":["Documents textuels","Multimédia","Formats","Creative Commons","GPL"]},{"title":"Protection et sécurité","topics":["Sécurisation","Phishing","Ransomware","Ingénierie sociale","Confidentialité","RGPD","Green IT"]},{"title":"Environnement technique et évolution du numérique","topics":["Windows","Linux","Réseaux","IoT","Cloud computing","Green IT"]}]},
+      {"id":"ss1","title":"Atelier Study skills 1","code":"UET113","credits":2,"chapters":[{"title":"Neurosciences et techniques d’apprentissage avancées","topics":["Mémorisation","Récupération active","Répétition espacée","Méthode Feynman","DISC","Mind mapping"]},{"title":"Gestion du temps et productivité en prépa","topics":["GTD","Matrice Eisenhower","Pomodoro","Mind mapping"]},{"title":"Concentration et gestion des distractions","topics":["Concentration","Distractions numériques","Deep Work","Pleine conscience"]}]}
+    ]}
+  ]
+}
