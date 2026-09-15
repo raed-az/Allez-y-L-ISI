@@ -1,0 +1,7 @@
+{
+  "publications":[
+    {"id":1,"title":"Bienvenue sur Allez-y à l’ISI","content":"Première version indépendante de l’assistant universitaire. Les données de démonstration doivent être remplacées par des informations vérifiées.","date":"2026-09-15","category":"information"},
+    {"id":2,"title":"Prépa Intégrée : ressources","content":"La section Prépa est structurée à partir du syllabus fourni pour S1 et S2. Les liens complémentaires restent modifiables.","date":"2026-09-15","category":"cours"},
+    {"id":3,"title":"Projet en développement","content":"De nouvelles salles, emplois du temps, ressources et fonctionnalités peuvent être ajoutés via les fichiers JSON.","date":"2026-09-15","category":"important"}
+  ]
+}
