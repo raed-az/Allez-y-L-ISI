@@ -25,6 +25,18 @@ const NAV_ITEMS = [
   { route: "profile", icon: "👤", key: "nav_profile" },
   { route: "settings", icon: "⚙️", key: "nav_settings" },
   { route: "about", icon: "ℹ️", key: "nav_about" },
+  { route: "smart-attendance", icon: "📷", label: "Smart Attendance" },
+  { route: "campus-rpg", icon: "🎮", label: "Campus Life RPG" },
+  { route: "campus-navigator", icon: "🧭", label: "Campus Navigator" },
+  { route: "exam-survival", icon: "📝", label: "Exam Survival" },
+  { route: "skill-exchange", icon: "🤝", label: "Skill Exchange" },
+  { route: "ecocampus", icon: "🌱", label: "EcoCampus" },
+  { route: "study-copilot", icon: "🧠", label: "Study Copilot" },
+  { route: "campus-pulse", icon: "📣", label: "Campus Pulse" },
+  { route: "life-simulator", icon: "🗓️", label: "Life Simulator" },
+  { route: "lost-found", icon: "🔎", label: "Lost & Found" },
+  { route: "innovation-lab", icon: "💡", label: "Innovation Lab" },
+  { route: "campus-profile", icon: "🏆", label: "Campus Progress" },
 ];
 
 const App = {
@@ -49,6 +61,12 @@ const App = {
       if (role) this.renderLogin();
       else this.renderOnboardingRole();
       return;
+    }
+
+    // Groupe par défaut = groupe du profil de démonstration, tant que
+    // l'utilisateur n'a pas choisi un autre groupe dans Paramètres.
+    if (!Storage.getGroup() && this.session.profile && this.session.profile.group) {
+      Storage.setGroup(this.session.profile.group);
     }
 
     this.renderShell();
@@ -96,6 +114,18 @@ const App = {
       profile: () => Pages.profile(),
       settings: () => Pages.settings(),
       about: () => Pages.about(),
+      "smart-attendance": () => Suite.render("attendance"),
+      "campus-rpg": () => Suite.render("rpg"),
+      "campus-navigator": () => Suite.render("navigator"),
+      "exam-survival": () => Suite.render("exams"),
+      "skill-exchange": () => Suite.render("exchange"),
+      ecocampus: () => Suite.render("eco"),
+      "study-copilot": () => Suite.render("copilot"),
+      "campus-pulse": () => Suite.render("pulse"),
+      "life-simulator": () => Suite.render("simulator"),
+      "lost-found": () => Suite.render("lost"),
+      "innovation-lab": () => Suite.render("lab"),
+      "campus-profile": () => Suite.render("profile"),
     };
 
     const fn = renderers[route] || renderers.dashboard;
@@ -185,7 +215,7 @@ const App = {
     nav.innerHTML = NAV_ITEMS.map(item => `
       <div class="nav-item" data-route="${item.route}">
         <span class="nav-icon">${item.icon}</span>
-        <span data-i18n="${item.key}"></span>
+        ${item.label ? `<span>${item.label}</span>` : `<span data-i18n="${item.key}"></span>`}
       </div>
     `).join("");
     nav.querySelectorAll(".nav-item").forEach(el => {
