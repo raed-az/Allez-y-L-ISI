@@ -4,39 +4,50 @@
 // =====================================================
 
 const NAV_ITEMS = [
-  { route: "dashboard", icon: "🏠", key: "nav_home" },
-  { route: "timetable", icon: "📅", key: "nav_timetable" },
-  { route: "rooms", icon: "🏫", key: "nav_rooms" },
-  { route: "explore", icon: "🗺️", key: "nav_explore" },
-  { route: "teachers", icon: "👨‍🏫", key: "nav_teachers" },
-  { route: "subjects", icon: "📚", key: "nav_subjects" },
-  { route: "search", icon: "🔎", key: "nav_search" },
-  { route: "prepa", icon: "🎓", key: "nav_prepa" },
-  { route: "resources", icon: "📖", key: "nav_resources" },
-  { route: "assistant", icon: "🤖", key: "nav_assistant" },
-  { route: "publications", icon: "📢", key: "nav_publications" },
-  { route: "notifications", icon: "🔔", key: "nav_notifications" },
-  { route: "calendar", icon: "📆", key: "nav_calendar" },
-  { route: "favorites", icon: "⭐", key: "nav_favorites" },
-  { route: "notes", icon: "📝", key: "nav_notes" },
-  { route: "tasks", icon: "✅", key: "nav_tasks" },
-  { route: "progress", icon: "📊", key: "nav_progress" },
-  { route: "pomodoro", icon: "⏱️", key: "nav_pomodoro" },
-  { route: "profile", icon: "👤", key: "nav_profile" },
-  { route: "settings", icon: "⚙️", key: "nav_settings" },
-  { route: "about", icon: "ℹ️", key: "nav_about" },
-  { route: "smart-attendance", icon: "📷", label: "Smart Attendance" },
-  { route: "campus-rpg", icon: "🎮", label: "Campus Life RPG" },
-  { route: "campus-navigator", icon: "🧭", label: "Campus Navigator" },
-  { route: "exam-survival", icon: "📝", label: "Exam Survival" },
-  { route: "skill-exchange", icon: "🤝", label: "Skill Exchange" },
-  { route: "ecocampus", icon: "🌱", label: "EcoCampus" },
-  { route: "study-copilot", icon: "🧠", label: "Study Copilot" },
-  { route: "campus-pulse", icon: "📣", label: "Campus Pulse" },
-  { route: "life-simulator", icon: "🗓️", label: "Life Simulator" },
-  { route: "lost-found", icon: "🔎", label: "Lost & Found" },
-  { route: "innovation-lab", icon: "💡", label: "Innovation Lab" },
-  { route: "campus-profile", icon: "🏆", label: "Campus Progress" },
+  // --- Vie universitaire ---
+  { route: "dashboard", icon: "🏠", key: "nav_home", group: "life" },
+  { route: "timetable", icon: "📅", key: "nav_timetable", group: "life" },
+  { route: "rooms", icon: "🏫", key: "nav_rooms", group: "life" },
+  { route: "explore", icon: "🗺️", key: "nav_explore", group: "life" },
+  { route: "navigator", icon: "🧭", key: "nav_navigator", group: "life", extra: true },
+  { route: "pulse", icon: "📡", key: "nav_pulse", group: "life", extra: true },
+  { route: "lostfound", icon: "🎒", key: "nav_lostfound", group: "life", extra: true },
+  // --- Études et réussite ---
+  { route: "prepa", icon: "🎓", key: "nav_prepa", group: "study" },
+  { route: "exam", icon: "🎯", key: "nav_exam", group: "study", extra: true },
+  { route: "copilot", icon: "🧠", key: "nav_copilot", group: "study", extra: true },
+  { route: "simulator", icon: "🗓️", key: "nav_simulator", group: "study", extra: true },
+  { route: "resources", icon: "📖", key: "nav_resources", group: "study" },
+  { route: "subjects", icon: "📚", key: "nav_subjects", group: "study" },
+  { route: "teachers", icon: "👨‍🏫", key: "nav_teachers", group: "study" },
+  { route: "search", icon: "🔎", key: "nav_search", group: "study" },
+  { route: "assistant", icon: "🤖", key: "nav_assistant", group: "study" },
+  // --- Communauté ---
+  { route: "skills", icon: "🤝", key: "nav_skills", group: "community", extra: true },
+  { route: "innovation", icon: "💡", key: "nav_innovation", group: "community", extra: true },
+  { route: "publications", icon: "📢", key: "nav_publications", group: "community" },
+  { route: "calendar", icon: "📆", key: "nav_calendar", group: "community" },
+  { route: "notifications", icon: "🔔", key: "nav_notifications", group: "community" },
+  // --- Campus intelligent ---
+  { route: "attendance", icon: "✅", key: "nav_attendance", group: "smart", extra: true },
+  { route: "eco", icon: "🌱", key: "nav_eco", group: "smart", extra: true },
+  { route: "rpg", icon: "🏆", key: "nav_rpg", group: "smart", extra: true },
+  // --- Mon espace ---
+  { route: "favorites", icon: "⭐", key: "nav_favorites", group: "me" },
+  { route: "notes", icon: "📝", key: "nav_notes", group: "me" },
+  { route: "tasks", icon: "✅", key: "nav_tasks", group: "me" },
+  { route: "progress", icon: "📊", key: "nav_progress", group: "me" },
+  { route: "pomodoro", icon: "⏱️", key: "nav_pomodoro", group: "me" },
+  { route: "profile", icon: "👤", key: "nav_profile", group: "me" },
+  { route: "settings", icon: "⚙️", key: "nav_settings", group: "me" },
+  { route: "about", icon: "ℹ️", key: "nav_about", group: "me" },
+];
+const NAV_GROUPS = [
+  { id: "life", key: "nav_g_life" },
+  { id: "study", key: "nav_g_study" },
+  { id: "community", key: "nav_g_community" },
+  { id: "smart", key: "nav_g_smart" },
+  { id: "me", key: "nav_g_me" },
 ];
 
 const App = {
@@ -86,6 +97,8 @@ const App = {
 
   route() {
     if (!this.session) return;
+    if (window.ISI) ISI.clearTimers();
+    const mr = document.getElementById("modal-root"); if (mr && mr.innerHTML) { mr.innerHTML = ""; if (this._escHandler) { document.removeEventListener("keydown", this._escHandler); this._escHandler = null; } }
     const full = this.currentRoute();
     const [route, ...rest] = full.split("/");
     const params = rest;
@@ -114,26 +127,17 @@ const App = {
       profile: () => Pages.profile(),
       settings: () => Pages.settings(),
       about: () => Pages.about(),
-      "smart-attendance": () => Suite.render("attendance"),
-      "campus-rpg": () => Suite.render("rpg"),
-      "campus-navigator": () => Suite.render("navigator"),
-      "exam-survival": () => Suite.render("exams"),
-      "skill-exchange": () => Suite.render("exchange"),
-      ecocampus: () => Suite.render("eco"),
-      "study-copilot": () => Suite.render("copilot"),
-      "campus-pulse": () => Suite.render("pulse"),
-      "life-simulator": () => Suite.render("simulator"),
-      "lost-found": () => Suite.render("lost"),
-      "innovation-lab": () => Suite.render("lab"),
-      "campus-profile": () => Suite.render("profile"),
     };
 
-    const fn = renderers[route] || renderers.dashboard;
+    // Modules « Campus » : routes déclarées dans NAV_ITEMS (extra: true) et définies dans Pages.<route>
+    const isExtra = NAV_ITEMS.some(i => i.extra && i.route === route) && typeof Pages[route] === "function";
+    const fn = renderers[route] || (isExtra ? () => Pages[route](params) : renderers.dashboard);
     const content = document.getElementById("content-area");
     content.innerHTML = `<div class="empty-state">${t("common_loading")}</div>`;
     Promise.resolve(fn()).then(html => {
       if (typeof html === "string") content.innerHTML = html;
       translateStaticDom(content);
+      if (window.ISI) ISI.flush();
       window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
     });
   },
@@ -212,14 +216,19 @@ const App = {
 
   renderSidebarNav() {
     const nav = document.getElementById("sidebar-nav");
-    nav.innerHTML = NAV_ITEMS.map(item => `
-      <div class="nav-item" data-route="${item.route}">
-        <span class="nav-icon">${item.icon}</span>
-        ${item.label ? `<span>${item.label}</span>` : `<span data-i18n="${item.key}"></span>`}
-      </div>
+    nav.setAttribute("aria-label", "Navigation");
+    nav.innerHTML = NAV_GROUPS.map(g => `
+      <div class="sidebar-section-label" data-i18n="${g.key}"></div>
+      ${NAV_ITEMS.filter(i => i.group === g.id).map(item => `
+        <div class="nav-item" data-route="${item.route}" role="link" tabindex="0">
+          <span class="nav-icon" aria-hidden="true">${item.icon}</span>
+          <span data-i18n="${item.key}"></span>
+        </div>`).join("")}
     `).join("");
     nav.querySelectorAll(".nav-item").forEach(el => {
-      el.addEventListener("click", () => this.navigate(el.getAttribute("data-route")));
+      const go = () => this.navigate(el.getAttribute("data-route"));
+      el.addEventListener("click", go);
+      el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
     });
   },
 
@@ -280,19 +289,29 @@ const App = {
   // ---------------- Modals ----------------
   openModal(innerHtml) {
     const root = document.getElementById("modal-root");
-    root.innerHTML = `<div class="modal-backdrop" id="active-modal"><div class="modal-box">${innerHtml}</div></div>`;
+    this._lastFocus = document.activeElement;
+    root.innerHTML = `<div class="modal-backdrop" id="active-modal"><div class="modal-box" role="dialog" aria-modal="true">${innerHtml}</div></div>`;
     translateStaticDom(root);
     requestAnimationFrame(() => document.getElementById("active-modal").classList.add("show"));
     document.getElementById("active-modal").addEventListener("click", (e) => {
       if (e.target.id === "active-modal") App.closeModal();
     });
     root.querySelectorAll("[data-close-modal]").forEach(el => el.addEventListener("click", () => App.closeModal()));
+    const box = root.querySelector(".modal-box");
+    const heading = box.querySelector("h1,h2,h3");
+    if (heading) { heading.id = heading.id || "modal-title"; box.setAttribute("aria-labelledby", heading.id); }
+    this._escHandler = (e) => { if (e.key === "Escape") App.closeModal(); };
+    document.addEventListener("keydown", this._escHandler);
+    const focusable = box.querySelector("input,select,textarea,button,[href]");
+    if (focusable) focusable.focus();
   },
   closeModal() {
     const modal = document.getElementById("active-modal");
     if (!modal) return;
     modal.classList.remove("show");
-    setTimeout(() => { document.getElementById("modal-root").innerHTML = ""; }, 200);
+    if (this._escHandler) { document.removeEventListener("keydown", this._escHandler); this._escHandler = null; }
+    setTimeout(() => { if (document.getElementById("active-modal") === modal) document.getElementById("modal-root").innerHTML = ""; }, 200);
+    if (this._lastFocus && this._lastFocus.focus) { try { this._lastFocus.focus(); } catch (e) {} }
   },
 
   // ---------------- Landing page + choix du rôle ----------------
