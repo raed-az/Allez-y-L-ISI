@@ -1,0 +1,201 @@
+{
+ "_comment": "Configuration EcoCampus modifiable + classements FICTIFS.",
+ "stages": [
+  0,
+  10,
+  30,
+  60,
+  120,
+  250
+ ],
+ "actions": [
+  {
+   "id": "recycle",
+   "points": 10,
+   "dailyCap": 1,
+   "icon": "♻️",
+   "title_fr": "Campagne de recyclage",
+   "title_en": "Recycling campaign",
+   "title_ar": "حملة إعادة التدوير"
+  },
+  {
+   "id": "cleanup",
+   "points": 15,
+   "dailyCap": 1,
+   "icon": "🧹",
+   "title_fr": "Journée de nettoyage",
+   "title_en": "Cleanup day",
+   "title_ar": "يوم تنظيف"
+  },
+  {
+   "id": "reusable",
+   "points": 3,
+   "dailyCap": 1,
+   "icon": "🥤",
+   "title_fr": "Objet réutilisable (gourde, tasse…)",
+   "title_en": "Reusable item (bottle, cup…)",
+   "title_ar": "أداة قابلة لإعادة الاستعمال"
+  },
+  {
+   "id": "planting",
+   "points": 15,
+   "dailyCap": 1,
+   "icon": "🌱",
+   "title_fr": "Plantation",
+   "title_en": "Planting",
+   "title_ar": "غرس"
+  },
+  {
+   "id": "reuse",
+   "points": 8,
+   "dailyCap": 2,
+   "icon": "📚",
+   "title_fr": "Réutilisation de livres/fournitures",
+   "title_en": "Reusing books/supplies",
+   "title_ar": "إعادة استعمال الكتب واللوازم"
+  },
+  {
+   "id": "report",
+   "points": 5,
+   "dailyCap": 2,
+   "icon": "📣",
+   "title_fr": "Signalement d'un problème écologique",
+   "title_en": "Reporting an eco issue",
+   "title_ar": "التبليغ عن مشكل بيئي"
+  }
+ ],
+ "challenges": [
+  {
+   "id": "e-d1",
+   "period": "daily",
+   "scope": "individual",
+   "target": 1,
+   "simulatedOthers": 0,
+   "bonus": 2,
+   "actions": [
+    "reusable",
+    "reuse",
+    "report"
+   ],
+   "title_fr": "Geste du jour",
+   "title_en": "Daily gesture",
+   "title_ar": "عمل اليوم",
+   "desc_fr": "Déclarez 1 geste écologique aujourd'hui.",
+   "desc_en": "Declare 1 eco gesture today.",
+   "desc_ar": "صرّح بعمل بيئي واحد اليوم."
+  },
+  {
+   "id": "e-w1",
+   "period": "weekly",
+   "scope": "individual",
+   "target": 3,
+   "simulatedOthers": 0,
+   "bonus": 6,
+   "actions": [],
+   "title_fr": "Trois gestes cette semaine",
+   "title_en": "Three gestures this week",
+   "title_ar": "ثلاثة أعمال هذا الأسبوع",
+   "desc_fr": "Déclarez 3 actions (toutes catégories).",
+   "desc_en": "Declare 3 actions (any category).",
+   "desc_ar": "صرّح بـ3 أعمال (أي فئة)."
+  },
+  {
+   "id": "e-w2",
+   "period": "weekly",
+   "scope": "collective",
+   "target": 60,
+   "simulatedOthers": 41,
+   "bonus": 8,
+   "actions": [
+    "recycle",
+    "cleanup"
+   ],
+   "title_fr": "Défi collectif propreté (simulé)",
+   "title_en": "Collective cleanliness challenge (simulated)",
+   "title_ar": "تحدي النظافة الجماعي (محاكى)",
+   "desc_fr": "60 participations aux campagnes. La part des autres est fictive.",
+   "desc_en": "60 campaign participations. Others' share is fictional.",
+   "desc_ar": "60 مشاركة في الحملات. حصة الآخرين وهمية."
+  },
+  {
+   "id": "e-w3",
+   "period": "weekly",
+   "scope": "group",
+   "target": 12,
+   "simulatedOthers": 7,
+   "bonus": 5,
+   "actions": [
+    "reuse",
+    "reusable"
+   ],
+   "title_fr": "Objectif de groupe (simulé)",
+   "title_en": "Group goal (simulated)",
+   "title_ar": "هدف المجموعة (محاكى)",
+   "desc_fr": "12 réutilisations pour votre groupe. Les autres membres sont fictifs.",
+   "desc_en": "12 reuses for your group. Other members are fictional.",
+   "desc_ar": "12 إعادة استعمال لمجموعتك. بقية الأعضاء وهميون."
+  }
+ ],
+ "leaderboards": {
+  "students": [
+   [
+    "Étudiant fictif 04",
+    96
+   ],
+   [
+    "Étudiant fictif 11",
+    81
+   ],
+   [
+    "Étudiant fictif 07",
+    64
+   ],
+   [
+    "Étudiant fictif 02",
+    40
+   ],
+   [
+    "Étudiant fictif 09",
+    22
+   ]
+  ],
+  "groups": [
+   [
+    "Groupe fictif A",
+    412
+   ],
+   [
+    "Groupe fictif B",
+    377
+   ],
+   [
+    "Groupe fictif C",
+    290
+   ]
+  ],
+  "promos": [
+   [
+    "Promotion fictive 1",
+    1210
+   ],
+   [
+    "Promotion fictive 2",
+    1045
+   ]
+  ],
+  "campaigns": [
+   [
+    "Campagne recyclage (fictive)",
+    58
+   ],
+   [
+    "Journée nettoyage (fictive)",
+    44
+   ],
+   [
+    "Plantation (fictive)",
+    31
+   ]
+  ]
+ }
+}

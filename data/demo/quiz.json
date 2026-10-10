@@ -1,0 +1,575 @@
+{
+ "_comment": "QCM GÉNÉRIQUES de démonstration, rédigés pour ce projet : ils NE proviennent PAS du syllabus officiel. 'topic' sert uniquement à retrouver des chapitres du syllabus fourni par mot-clé.",
+ "questions": [
+  {
+   "id": "q-alg1",
+   "subject": "Algèbre 1",
+   "topic": "complexes",
+   "q": {
+    "fr": "Quel est le module de z = 3 + 4i ?",
+    "en": "What is the modulus of z = 3 + 4i?",
+    "ar": "ما هو طويلة العدد z = 3 + 4i ؟"
+   },
+   "options": [
+    {
+     "fr": "3",
+     "en": "3",
+     "ar": "3"
+    },
+    {
+     "fr": "4",
+     "en": "4",
+     "ar": "4"
+    },
+    {
+     "fr": "5",
+     "en": "5",
+     "ar": "5"
+    },
+    {
+     "fr": "7",
+     "en": "7",
+     "ar": "7"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "fr": "|z| = √(3² + 4²) = √25 = 5.",
+    "en": "|z| = √(3² + 4²) = √25 = 5.",
+    "ar": "|z| = √(3² + 4²) = √25 = 5."
+   }
+  },
+  {
+   "id": "q-alg2",
+   "subject": "Algèbre 1",
+   "topic": "complexes",
+   "q": {
+    "fr": "Que vaut i² ?",
+    "en": "What is i²?",
+    "ar": "ما قيمة i² ؟"
+   },
+   "options": [
+    {
+     "fr": "1",
+     "en": "1",
+     "ar": "1"
+    },
+    {
+     "fr": "−1",
+     "en": "−1",
+     "ar": "−1"
+    },
+    {
+     "fr": "i",
+     "en": "i",
+     "ar": "i"
+    },
+    {
+     "fr": "−i",
+     "en": "−i",
+     "ar": "−i"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "fr": "Par définition, i² = −1.",
+    "en": "By definition, i² = −1.",
+    "ar": "حسب التعريف i² = −1."
+   }
+  },
+  {
+   "id": "q-alg3",
+   "subject": "Algèbre 1",
+   "topic": "complexes",
+   "q": {
+    "fr": "Quel est le conjugué de 2 − 5i ?",
+    "en": "What is the conjugate of 2 − 5i?",
+    "ar": "ما مرافق العدد 2 − 5i ؟"
+   },
+   "options": [
+    {
+     "fr": "2 + 5i",
+     "en": "2 + 5i",
+     "ar": "2 + 5i"
+    },
+    {
+     "fr": "−2 + 5i",
+     "en": "−2 + 5i",
+     "ar": "−2 + 5i"
+    },
+    {
+     "fr": "−2 − 5i",
+     "en": "−2 − 5i",
+     "ar": "−2 − 5i"
+    },
+    {
+     "fr": "5 − 2i",
+     "en": "5 − 2i",
+     "ar": "5 − 2i"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "fr": "On change le signe de la partie imaginaire : 2 + 5i.",
+    "en": "Flip the sign of the imaginary part: 2 + 5i.",
+    "ar": "نغير إشارة الجزء التخيلي: 2 + 5i."
+   }
+  },
+  {
+   "id": "q-ana1",
+   "subject": "Analyse 1",
+   "topic": "suites",
+   "q": {
+    "fr": "Limite de 1/n quand n tend vers +∞ ?",
+    "en": "Limit of 1/n as n → +∞?",
+    "ar": "نهاية 1/n عندما n → +∞ ؟"
+   },
+   "options": [
+    {
+     "fr": "0",
+     "en": "0",
+     "ar": "0"
+    },
+    {
+     "fr": "1",
+     "en": "1",
+     "ar": "1"
+    },
+    {
+     "fr": "+∞",
+     "en": "+∞",
+     "ar": "+∞"
+    },
+    {
+     "fr": "n'existe pas",
+     "en": "n'existe pas",
+     "ar": "n'existe pas"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "fr": "1/n devient arbitrairement petit : la limite est 0.",
+    "en": "1/n becomes arbitrarily small: the limit is 0.",
+    "ar": "1/n يصبح صغيرا جدا: النهاية 0."
+   }
+  },
+  {
+   "id": "q-ana2",
+   "subject": "Analyse 1",
+   "topic": "suites",
+   "q": {
+    "fr": "La suite uₙ = (1/2)ⁿ converge vers :",
+    "en": "The sequence uₙ = (1/2)ⁿ converges to:",
+    "ar": "المتتالية uₙ = (1/2)ⁿ تتقارب نحو:"
+   },
+   "options": [
+    {
+     "fr": "0",
+     "en": "0",
+     "ar": "0"
+    },
+    {
+     "fr": "1/2",
+     "en": "1/2",
+     "ar": "1/2"
+    },
+    {
+     "fr": "1",
+     "en": "1",
+     "ar": "1"
+    },
+    {
+     "fr": "elle diverge",
+     "en": "elle diverge",
+     "ar": "elle diverge"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "fr": "Suite géométrique de raison |q| < 1 : limite 0.",
+    "en": "Geometric sequence with |q| < 1: limit 0.",
+    "ar": "متتالية هندسية أساسها |q| < 1: النهاية 0."
+   }
+  },
+  {
+   "id": "q-ana3",
+   "subject": "Analyse 1",
+   "topic": "suites",
+   "q": {
+    "fr": "Une suite croissante et majorée est :",
+    "en": "An increasing sequence bounded above is:",
+    "ar": "المتتالية التزايدية والمحدودة من الأعلى:"
+   },
+   "options": [
+    {
+     "fr": "convergente",
+     "en": "convergent",
+     "ar": "متقاربة"
+    },
+    {
+     "fr": "divergente",
+     "en": "divergent",
+     "ar": "متباعدة"
+    },
+    {
+     "fr": "nulle",
+     "en": "zero",
+     "ar": "معدومة"
+    },
+    {
+     "fr": "périodique",
+     "en": "periodic",
+     "ar": "دورية"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "fr": "Théorème de la limite monotone : elle converge.",
+    "en": "Monotone convergence theorem: it converges.",
+    "ar": "مبرهنة التقارب الرتيب: تتقارب."
+   }
+  },
+  {
+   "id": "q-asd1",
+   "subject": "ASD",
+   "topic": "complexité",
+   "q": {
+    "fr": "Recherche séquentielle dans un tableau non trié de n éléments (pire cas) :",
+    "en": "Sequential search in an unsorted array of n elements (worst case):",
+    "ar": "بحث تسلسلي في جدول غير مرتب من n عنصر (أسوأ حالة):"
+   },
+   "options": [
+    {
+     "fr": "O(1)",
+     "en": "O(1)",
+     "ar": "O(1)"
+    },
+    {
+     "fr": "O(log n)",
+     "en": "O(log n)",
+     "ar": "O(log n)"
+    },
+    {
+     "fr": "O(n)",
+     "en": "O(n)",
+     "ar": "O(n)"
+    },
+    {
+     "fr": "O(n²)",
+     "en": "O(n²)",
+     "ar": "O(n²)"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "fr": "Il faut parfois parcourir les n éléments.",
+    "en": "You may have to scan all n elements.",
+    "ar": "قد نضطر لفحص كل العناصر."
+   }
+  },
+  {
+   "id": "q-asd2",
+   "subject": "ASD",
+   "topic": "complexité",
+   "q": {
+    "fr": "Recherche dichotomique dans un tableau trié :",
+    "en": "Binary search in a sorted array:",
+    "ar": "بحث ثنائي في جدول مرتب:"
+   },
+   "options": [
+    {
+     "fr": "O(1)",
+     "en": "O(1)",
+     "ar": "O(1)"
+    },
+    {
+     "fr": "O(log n)",
+     "en": "O(log n)",
+     "ar": "O(log n)"
+    },
+    {
+     "fr": "O(n)",
+     "en": "O(n)",
+     "ar": "O(n)"
+    },
+    {
+     "fr": "O(n log n)",
+     "en": "O(n log n)",
+     "ar": "O(n log n)"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "fr": "Chaque étape divise l'intervalle par 2.",
+    "en": "Each step halves the interval.",
+    "ar": "كل خطوة تقسم المجال على 2."
+   }
+  },
+  {
+   "id": "q-asd3",
+   "subject": "ASD",
+   "topic": "complexité",
+   "q": {
+    "fr": "Accéder à t[i] dans un tableau est en :",
+    "en": "Accessing t[i] in an array is:",
+    "ar": "الوصول إلى t[i] في جدول هو:"
+   },
+   "options": [
+    {
+     "fr": "O(1)",
+     "en": "O(1)",
+     "ar": "O(1)"
+    },
+    {
+     "fr": "O(log n)",
+     "en": "O(log n)",
+     "ar": "O(log n)"
+    },
+    {
+     "fr": "O(n)",
+     "en": "O(n)",
+     "ar": "O(n)"
+    },
+    {
+     "fr": "O(n²)",
+     "en": "O(n²)",
+     "ar": "O(n²)"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "fr": "L'accès par indice est direct (temps constant).",
+    "en": "Index access is direct (constant time).",
+    "ar": "الوصول بالفهرس مباشر (زمن ثابت)."
+   }
+  },
+  {
+   "id": "q-mec1",
+   "subject": "Mécanique",
+   "topic": "cinématique",
+   "q": {
+    "fr": "Mouvement rectiligne uniforme à 10 m/s pendant 5 s : distance parcourue ?",
+    "en": "Uniform motion at 10 m/s for 5 s: distance covered?",
+    "ar": "حركة مستقيمة منتظمة بسرعة 10 م/ث خلال 5 ث: المسافة؟"
+   },
+   "options": [
+    {
+     "fr": "2 m",
+     "en": "2 m",
+     "ar": "2 m"
+    },
+    {
+     "fr": "15 m",
+     "en": "15 m",
+     "ar": "15 m"
+    },
+    {
+     "fr": "50 m",
+     "en": "50 m",
+     "ar": "50 m"
+    },
+    {
+     "fr": "500 m",
+     "en": "500 m",
+     "ar": "500 m"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "fr": "d = v·t = 10 × 5 = 50 m.",
+    "en": "d = v·t = 10 × 5 = 50 m.",
+    "ar": "d = v·t = 10 × 5 = 50 م."
+   }
+  },
+  {
+   "id": "q-mec2",
+   "subject": "Mécanique",
+   "topic": "cinématique",
+   "q": {
+    "fr": "La vitesse passe de 0 à 20 m/s en 4 s : accélération moyenne ?",
+    "en": "Speed goes from 0 to 20 m/s in 4 s: mean acceleration?",
+    "ar": "تتغير السرعة من 0 إلى 20 م/ث في 4 ث: التسارع المتوسط؟"
+   },
+   "options": [
+    {
+     "fr": "0,2 m/s²",
+     "en": "0,2 m/s²",
+     "ar": "0,2 m/s²"
+    },
+    {
+     "fr": "5 m/s²",
+     "en": "5 m/s²",
+     "ar": "5 m/s²"
+    },
+    {
+     "fr": "16 m/s²",
+     "en": "16 m/s²",
+     "ar": "16 m/s²"
+    },
+    {
+     "fr": "80 m/s²",
+     "en": "80 m/s²",
+     "ar": "80 m/s²"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "fr": "a = Δv/Δt = 20/4 = 5 m/s².",
+    "en": "a = Δv/Δt = 20/4 = 5 m/s².",
+    "ar": "a = Δv/Δt = 20/4 = 5 م/ث²."
+   }
+  },
+  {
+   "id": "q-mec3",
+   "subject": "Mécanique",
+   "topic": "cinématique",
+   "q": {
+    "fr": "Unité SI de l'accélération :",
+    "en": "SI unit of acceleration:",
+    "ar": "وحدة التسارع في النظام الدولي:"
+   },
+   "options": [
+    {
+     "fr": "m/s",
+     "en": "m/s",
+     "ar": "m/s"
+    },
+    {
+     "fr": "m/s²",
+     "en": "m/s²",
+     "ar": "m/s²"
+    },
+    {
+     "fr": "N",
+     "en": "N",
+     "ar": "N"
+    },
+    {
+     "fr": "J",
+     "en": "J",
+     "ar": "J"
+    }
+   ],
+   "answer": 1,
+   "explain": {
+    "fr": "Mètre par seconde carrée.",
+    "en": "Metre per second squared.",
+    "ar": "متر على ثانية مربعة."
+   }
+  },
+  {
+   "id": "q-cir1",
+   "subject": "Circuits Electriques",
+   "topic": "circuit",
+   "q": {
+    "fr": "R = 10 Ω traversée par I = 2 A : tension U ?",
+    "en": "R = 10 Ω carrying I = 2 A: voltage U?",
+    "ar": "R = 10 Ω يمر بها I = 2 A: التوتر U؟"
+   },
+   "options": [
+    {
+     "fr": "5 V",
+     "en": "5 V",
+     "ar": "5 V"
+    },
+    {
+     "fr": "12 V",
+     "en": "12 V",
+     "ar": "12 V"
+    },
+    {
+     "fr": "20 V",
+     "en": "20 V",
+     "ar": "20 V"
+    },
+    {
+     "fr": "0,2 V",
+     "en": "0,2 V",
+     "ar": "0,2 V"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "fr": "Loi d'Ohm : U = R·I = 20 V.",
+    "en": "Ohm's law: U = R·I = 20 V.",
+    "ar": "قانون أوم: U = R·I = 20 فولط."
+   }
+  },
+  {
+   "id": "q-cir2",
+   "subject": "Circuits Electriques",
+   "topic": "circuit",
+   "q": {
+    "fr": "Deux résistances de 4 Ω et 6 Ω en série : résistance équivalente ?",
+    "en": "Two resistors 4 Ω and 6 Ω in series: equivalent resistance?",
+    "ar": "مقاومتان 4 Ω و6 Ω على التسلسل: المقاومة المكافئة؟"
+   },
+   "options": [
+    {
+     "fr": "2,4 Ω",
+     "en": "2,4 Ω",
+     "ar": "2,4 Ω"
+    },
+    {
+     "fr": "5 Ω",
+     "en": "5 Ω",
+     "ar": "5 Ω"
+    },
+    {
+     "fr": "10 Ω",
+     "en": "10 Ω",
+     "ar": "10 Ω"
+    },
+    {
+     "fr": "24 Ω",
+     "en": "24 Ω",
+     "ar": "24 Ω"
+    }
+   ],
+   "answer": 2,
+   "explain": {
+    "fr": "En série les résistances s'additionnent : 4 + 6 = 10 Ω.",
+    "en": "In series resistances add: 4 + 6 = 10 Ω.",
+    "ar": "على التسلسل تُجمع المقاومات: 4 + 6 = 10 Ω."
+   }
+  },
+  {
+   "id": "q-cir3",
+   "subject": "Circuits Electriques",
+   "topic": "circuit",
+   "q": {
+    "fr": "Loi des nœuds :",
+    "en": "Kirchhoff's current law:",
+    "ar": "قانون العقد:"
+   },
+   "options": [
+    {
+     "fr": "Somme des courants entrants = somme des courants sortants",
+     "en": "Sum of incoming currents = sum of outgoing currents",
+     "ar": "مجموع التيارات الداخلة = مجموع التيارات الخارجة"
+    },
+    {
+     "fr": "Somme des tensions = 0 dans un nœud",
+     "en": "Sum of voltages = 0 at a node",
+     "ar": "مجموع التوترات = 0 في عقدة"
+    },
+    {
+     "fr": "U = R·I",
+     "en": "U = R·I",
+     "ar": "U = R·I"
+    },
+    {
+     "fr": "P = U·I",
+     "en": "P = U·I",
+     "ar": "P = U·I"
+    }
+   ],
+   "answer": 0,
+   "explain": {
+    "fr": "Conservation de la charge en un nœud.",
+    "en": "Charge conservation at a node.",
+    "ar": "حفظ الشحنة عند عقدة."
+   }
+  }
+ ]
+}

@@ -1,0 +1,363 @@
+{
+ "_comment": "Configuration modifiable du Campus Life RPG. Contenu de DÉMONSTRATION. Les XP ne sont PAS des notes.",
+ "levels": [
+  {
+   "id": "debutant",
+   "min": 0,
+   "icon": "🌱",
+   "name_fr": "Débutant",
+   "name_en": "Beginner",
+   "name_ar": "مبتدئ"
+  },
+  {
+   "id": "explorateur",
+   "min": 100,
+   "icon": "🧭",
+   "name_fr": "Explorateur",
+   "name_en": "Explorer",
+   "name_ar": "مستكشف"
+  },
+  {
+   "id": "engage",
+   "min": 300,
+   "icon": "📘",
+   "name_fr": "Étudiant engagé",
+   "name_en": "Engaged student",
+   "name_ar": "طالب ملتزم"
+  },
+  {
+   "id": "expert",
+   "min": 700,
+   "icon": "🎓",
+   "name_fr": "Expert",
+   "name_en": "Expert",
+   "name_ar": "خبير"
+  },
+  {
+   "id": "legende",
+   "min": 1500,
+   "icon": "👑",
+   "name_fr": "Légende du campus",
+   "name_en": "Campus legend",
+   "name_ar": "أسطورة الحرم"
+  }
+ ],
+ "missions": [
+  {
+   "id": "d-focus",
+   "period": "daily",
+   "event": "focus",
+   "target": 1,
+   "xp": 15,
+   "title_fr": "Une session de concentration",
+   "title_en": "One focus session",
+   "title_ar": "جلسة تركيز واحدة",
+   "desc_fr": "Terminez une session de concentration dans Exam Survival Mode.",
+   "desc_en": "Complete one focus session in Exam Survival Mode.",
+   "desc_ar": "أنهِ جلسة تركيز في وضع النجاة في الامتحانات."
+  },
+  {
+   "id": "d-quiz",
+   "period": "daily",
+   "event": "quiz",
+   "target": 1,
+   "xp": 10,
+   "title_fr": "Un quiz de révision",
+   "title_en": "One revision quiz",
+   "title_ar": "اختبار مراجعة واحد",
+   "desc_fr": "Terminez un quiz dans Personal Study Copilot.",
+   "desc_en": "Finish a quiz in Personal Study Copilot.",
+   "desc_ar": "أنهِ اختبارا في مساعد المراجعة الشخصي."
+  },
+  {
+   "id": "d-read",
+   "period": "daily",
+   "event": "read",
+   "target": 3,
+   "xp": 8,
+   "title_fr": "Rester informé",
+   "title_en": "Stay informed",
+   "title_ar": "ابقَ على اطلاع",
+   "desc_fr": "Marquez 3 publications comme lues dans Campus Pulse.",
+   "desc_en": "Mark 3 posts as read in Campus Pulse.",
+   "desc_ar": "علّم 3 منشورات كمقروءة في نبض الحرم."
+  },
+  {
+   "id": "w-focus",
+   "period": "weekly",
+   "event": "focus",
+   "target": 5,
+   "xp": 50,
+   "title_fr": "Régularité de la semaine",
+   "title_en": "Weekly consistency",
+   "title_ar": "انتظام الأسبوع",
+   "desc_fr": "5 sessions de concentration cette semaine (sans dépasser vos limites : pensez aux pauses).",
+   "desc_en": "5 focus sessions this week (respect your limits: take breaks).",
+   "desc_ar": "5 جلسات تركيز هذا الأسبوع (احترم حدودك وخذ فترات راحة)."
+  },
+  {
+   "id": "w-quiz",
+   "period": "weekly",
+   "event": "quiz",
+   "target": 3,
+   "xp": 30,
+   "title_fr": "Trois quiz",
+   "title_en": "Three quizzes",
+   "title_ar": "ثلاثة اختبارات",
+   "desc_fr": "Terminez 3 quiz cette semaine.",
+   "desc_en": "Finish 3 quizzes this week.",
+   "desc_ar": "أنهِ 3 اختبارات هذا الأسبوع."
+  },
+  {
+   "id": "w-help",
+   "period": "weekly",
+   "event": "help",
+   "target": 1,
+   "xp": 40,
+   "title_fr": "Coup de main",
+   "title_en": "Lend a hand",
+   "title_ar": "مدّ يد العون",
+   "desc_fr": "Déclarez une séance d'entraide dans ISI Skill Exchange.",
+   "desc_en": "Declare a help session in ISI Skill Exchange.",
+   "desc_ar": "صرّح بحصة مساعدة في تبادل المهارات."
+  },
+  {
+   "id": "w-plan",
+   "period": "weekly",
+   "event": "plan",
+   "target": 1,
+   "xp": 20,
+   "title_fr": "Semaine organisée",
+   "title_en": "Organised week",
+   "title_ar": "أسبوع منظم",
+   "desc_fr": "Enregistrez un planning dans University Life Simulator.",
+   "desc_en": "Save a plan in University Life Simulator.",
+   "desc_ar": "احفظ مخططا في محاكي الحياة الجامعية."
+  },
+  {
+   "id": "w-innov",
+   "period": "weekly",
+   "event": "vote",
+   "target": 2,
+   "xp": 15,
+   "title_fr": "Voix du campus",
+   "title_en": "Campus voice",
+   "title_ar": "صوت الحرم",
+   "desc_fr": "Votez pour 2 idées dans ISI Innovation Lab (vote local).",
+   "desc_en": "Vote for 2 ideas in ISI Innovation Lab (local vote).",
+   "desc_ar": "صوّت لفكرتين في مختبر الابتكار (تصويت محلي)."
+  }
+ ],
+ "badges": [
+  {
+   "id": "first-focus",
+   "icon": "⏱️",
+   "rule": {
+    "type": "event",
+    "event": "focus",
+    "count": 1
+   },
+   "title_fr": "Premier focus",
+   "title_en": "First focus",
+   "title_ar": "أول تركيز",
+   "desc_fr": "Première session de concentration.",
+   "desc_en": "First focus session.",
+   "desc_ar": "أول جلسة تركيز."
+  },
+  {
+   "id": "focus-10",
+   "icon": "🔥",
+   "rule": {
+    "type": "event",
+    "event": "focus",
+    "count": 10
+   },
+   "title_fr": "Concentré",
+   "title_en": "Focused",
+   "title_ar": "مركّز",
+   "desc_fr": "10 sessions de concentration.",
+   "desc_en": "10 focus sessions.",
+   "desc_ar": "10 جلسات تركيز."
+  },
+  {
+   "id": "quiz-5",
+   "icon": "🧠",
+   "rule": {
+    "type": "event",
+    "event": "quiz",
+    "count": 5
+   },
+   "title_fr": "Esprit curieux",
+   "title_en": "Curious mind",
+   "title_ar": "عقل فضولي",
+   "desc_fr": "5 quiz terminés.",
+   "desc_en": "5 quizzes finished.",
+   "desc_ar": "5 اختبارات منجزة."
+  },
+  {
+   "id": "helper",
+   "icon": "🤝",
+   "rule": {
+    "type": "event",
+    "event": "help",
+    "count": 1
+   },
+   "title_fr": "Entraide",
+   "title_en": "Helper",
+   "title_ar": "مساعد",
+   "desc_fr": "Première séance d'entraide déclarée.",
+   "desc_en": "First help session declared.",
+   "desc_ar": "أول حصة مساعدة."
+  },
+  {
+   "id": "eco-start",
+   "icon": "🌱",
+   "rule": {
+    "type": "event",
+    "event": "eco",
+    "count": 1
+   },
+   "title_fr": "Pousse verte",
+   "title_en": "Green sprout",
+   "title_ar": "برعم أخضر",
+   "desc_fr": "Première action écologique déclarée.",
+   "desc_en": "First eco action declared.",
+   "desc_ar": "أول عمل بيئي."
+  },
+  {
+   "id": "eco-10",
+   "icon": "🌳",
+   "rule": {
+    "type": "event",
+    "event": "eco",
+    "count": 10
+   },
+   "title_fr": "Gardien de l'arbre",
+   "title_en": "Tree keeper",
+   "title_ar": "حارس الشجرة",
+   "desc_fr": "10 actions écologiques déclarées.",
+   "desc_en": "10 eco actions declared.",
+   "desc_ar": "10 أعمال بيئية."
+  },
+  {
+   "id": "informed",
+   "icon": "📡",
+   "rule": {
+    "type": "event",
+    "event": "read",
+    "count": 10
+   },
+   "title_fr": "Bien informé",
+   "title_en": "Well informed",
+   "title_ar": "مطلع",
+   "desc_fr": "10 publications lues.",
+   "desc_en": "10 posts read.",
+   "desc_ar": "قراءة 10 منشورات."
+  },
+  {
+   "id": "innovator",
+   "icon": "💡",
+   "rule": {
+    "type": "event",
+    "event": "post",
+    "count": 1
+   },
+   "title_fr": "Innovateur",
+   "title_en": "Innovator",
+   "title_ar": "مبتكر",
+   "desc_fr": "Première idée déposée dans l'Innovation Lab.",
+   "desc_en": "First idea posted in the Innovation Lab.",
+   "desc_ar": "أول فكرة في مختبر الابتكار."
+  },
+  {
+   "id": "planner",
+   "icon": "🗓️",
+   "rule": {
+    "type": "event",
+    "event": "plan",
+    "count": 1
+   },
+   "title_fr": "Organisé",
+   "title_en": "Organised",
+   "title_ar": "منظم",
+   "desc_fr": "Premier planning enregistré.",
+   "desc_en": "First plan saved.",
+   "desc_ar": "أول مخطط محفوظ."
+  },
+  {
+   "id": "scanner",
+   "icon": "✅",
+   "rule": {
+    "type": "event",
+    "event": "attendance",
+    "count": 1
+   },
+   "title_fr": "Présent",
+   "title_en": "Present",
+   "title_ar": "حاضر",
+   "desc_fr": "Un scan de présence simulé (n'accorde aucun XP).",
+   "desc_en": "A simulated attendance scan (grants no XP).",
+   "desc_ar": "مسح حضور محاكى (دون نقاط)."
+  },
+  {
+   "id": "level-2",
+   "icon": "⭐",
+   "rule": {
+    "type": "xp",
+    "min": 100
+   },
+   "title_fr": "Niveau 2",
+   "title_en": "Level 2",
+   "title_ar": "المستوى 2",
+   "desc_fr": "Atteindre le niveau Explorateur.",
+   "desc_en": "Reach the Explorer level.",
+   "desc_ar": "بلوغ مستوى مستكشف."
+  },
+  {
+   "id": "level-4",
+   "icon": "🏅",
+   "rule": {
+    "type": "xp",
+    "min": 700
+   },
+   "title_fr": "Niveau 4",
+   "title_en": "Level 4",
+   "title_ar": "المستوى 4",
+   "desc_fr": "Atteindre le niveau Expert.",
+   "desc_en": "Reach the Expert level.",
+   "desc_ar": "بلوغ مستوى خبير."
+  }
+ ],
+ "challenges": [
+  {
+   "id": "c-focus",
+   "event": "focus",
+   "target": 150,
+   "simulatedOthers": 96,
+   "minContribution": 3,
+   "xp": 25,
+   "period": "weekly",
+   "title_fr": "Marathon de révision collectif",
+   "title_en": "Collective revision marathon",
+   "title_ar": "ماراطون المراجعة الجماعي",
+   "desc_fr": "Objectif collectif SIMULÉ : 150 sessions de concentration. Votre contribution compte pour de vrai (locale) ; celle des autres est fictive.",
+   "desc_en": "SIMULATED collective goal: 150 focus sessions. Your contribution is real (local); others' is fictional.",
+   "desc_ar": "هدف جماعي محاكى: 150 جلسة تركيز. مساهمتك حقيقية (محلية) ومساهمة الآخرين وهمية."
+  },
+  {
+   "id": "c-help",
+   "event": "help",
+   "target": 40,
+   "simulatedOthers": 17,
+   "minContribution": 1,
+   "xp": 25,
+   "period": "weekly",
+   "title_fr": "Semaine de l'entraide",
+   "title_en": "Help week",
+   "title_ar": "أسبوع التعاون",
+   "desc_fr": "Objectif collectif SIMULÉ : 40 séances d'entraide.",
+   "desc_en": "SIMULATED collective goal: 40 help sessions.",
+   "desc_ar": "هدف جماعي محاكى: 40 حصة مساعدة."
+  }
+ ]
+}

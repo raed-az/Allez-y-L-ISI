@@ -1,0 +1,153 @@
+{
+ "_comment": "IDÉES FICTIVES (ISI Innovation Lab). Votes et statuts SIMULÉS ; aucune consultation officielle.",
+ "ideas": [
+  {
+   "id": "in-1",
+   "category": "digital",
+   "status": "in_progress",
+   "votes": 24,
+   "team": [
+    "demo-stu-02",
+    "demo-stu-05"
+   ],
+   "progress": 40,
+   "demo": true,
+   "daysAgo": 3,
+   "authorName": "Étudiant fictif 01",
+   "title_fr": "Application d'entraide pour les TP",
+   "title_en": "Lab help app",
+   "title_ar": "تطبيق مساعدة للأشغال",
+   "desc_fr": "Idée fictive : un espace pour poser des questions sur les TP.",
+   "desc_en": "Fictional idea: a space to ask lab questions.",
+   "desc_ar": "فكرة وهمية: فضاء لطرح أسئلة الأشغال.",
+   "comments": [
+    {
+     "who": "Étudiant fictif 10",
+     "text": "Bonne idée (commentaire fictif)."
+    }
+   ]
+  },
+  {
+   "id": "in-2",
+   "category": "ecology",
+   "status": "accepted",
+   "votes": 31,
+   "team": [
+    "demo-stu-04"
+   ],
+   "progress": 10,
+   "demo": true,
+   "daysAgo": 6,
+   "authorName": "Étudiant fictif 02",
+   "title_fr": "Points de tri supplémentaires",
+   "title_en": "More sorting bins",
+   "title_ar": "المزيد من حاويات الفرز",
+   "desc_fr": "Idée fictive d'ajouter des bacs de tri.",
+   "desc_en": "Fictional idea to add sorting bins.",
+   "desc_ar": "فكرة وهمية لإضافة حاويات فرز.",
+   "comments": []
+  },
+  {
+   "id": "in-3",
+   "category": "campus",
+   "status": "discussion",
+   "votes": 12,
+   "team": [],
+   "progress": 0,
+   "demo": true,
+   "daysAgo": 9,
+   "authorName": "Étudiant fictif 03",
+   "title_fr": "Espaces de travail silencieux",
+   "title_en": "Quiet study spaces",
+   "title_ar": "فضاءات عمل هادئة",
+   "desc_fr": "Idée fictive : coins calmes pour réviser.",
+   "desc_en": "Fictional idea: quiet corners to study.",
+   "desc_ar": "فكرة وهمية: أركان هادئة للمراجعة.",
+   "comments": [
+    {
+     "who": "Étudiant fictif 10",
+     "text": "J'aime ! (fictif)"
+    }
+   ]
+  },
+  {
+   "id": "in-4",
+   "category": "pedagogy",
+   "status": "to_study",
+   "votes": 9,
+   "team": [],
+   "progress": 0,
+   "demo": true,
+   "daysAgo": 12,
+   "authorName": "Étudiant fictif 04",
+   "title_fr": "Sessions de questions-réponses avant examens",
+   "title_en": "Pre-exam Q&A sessions",
+   "title_ar": "حصص أسئلة وأجوبة قبل الامتحانات",
+   "desc_fr": "Idée fictive d'organiser des révisions encadrées.",
+   "desc_en": "Fictional idea to organise supervised revision.",
+   "desc_ar": "فكرة وهمية لتنظيم مراجعات مؤطرة.",
+   "comments": []
+  },
+  {
+   "id": "in-5",
+   "category": "social",
+   "status": "done",
+   "votes": 40,
+   "team": [
+    "demo-stu-07",
+    "demo-stu-08",
+    "demo-stu-12"
+   ],
+   "progress": 100,
+   "demo": true,
+   "daysAgo": 15,
+   "authorName": "Étudiant fictif 05",
+   "title_fr": "Journée d'accueil des nouveaux",
+   "title_en": "Newcomer welcome day",
+   "title_ar": "يوم استقبال الجدد",
+   "desc_fr": "Projet fictif terminé, présenté à titre d'exemple.",
+   "desc_en": "Fictional finished project shown as an example.",
+   "desc_ar": "مشروع وهمي منتهٍ كمثال.",
+   "comments": []
+  },
+  {
+   "id": "in-6",
+   "category": "campus",
+   "status": "refused",
+   "votes": 5,
+   "team": [],
+   "progress": 0,
+   "demo": true,
+   "daysAgo": 18,
+   "authorName": "Étudiant fictif 06",
+   "title_fr": "Ouvrir le campus 24h/24",
+   "title_en": "Open the campus 24/7",
+   "title_ar": "فتح الحرم على مدار الساعة",
+   "desc_fr": "Idée fictive refusée pour illustrer ce statut.",
+   "desc_en": "Fictional idea refused to illustrate this status.",
+   "desc_ar": "فكرة وهمية مرفوضة لتوضيح هذه الحالة.",
+   "comments": [],
+   "justification_fr": "Refus SIMULÉ : contraintes de sécurité (exemple fictif, aucune décision réelle).",
+   "justification_en": "SIMULATED refusal: security constraints (fictional example, no real decision).",
+   "justification_ar": "رفض محاكى: قيود أمنية (مثال وهمي، لا قرار حقيقي)."
+  },
+  {
+   "id": "in-7",
+   "category": "digital",
+   "status": "new",
+   "votes": 3,
+   "team": [],
+   "progress": 0,
+   "demo": true,
+   "daysAgo": 21,
+   "authorName": "Étudiant fictif 07",
+   "title_fr": "Rappels de cours par notification",
+   "title_en": "Class reminders via notifications",
+   "title_ar": "تذكيرات بالدروس عبر الإشعارات",
+   "desc_fr": "Idée fictive de démonstration.",
+   "desc_en": "Fictional demo idea.",
+   "desc_ar": "فكرة وهمية تجريبية.",
+   "comments": []
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "_comment": "PUBLICATIONS FICTIVES de démonstration (Campus Pulse). Aucune annonce réelle. Les vraies publications viennent de data/publications.json.",
+ "items": [
+  {
+   "id": "pu-d1",
+   "kind": "event",
+   "daysFromNow": 3,
+   "subject": "",
+   "group": "",
+   "demo": true,
+   "title_fr": "Exemple : journée portes ouvertes",
+   "title_en": "Example: open day",
+   "title_ar": "مثال: يوم الأبواب المفتوحة",
+   "body_fr": "Événement fictif pour tester le calendrier et les filtres.",
+   "body_en": "Fictional event to test the calendar and filters.",
+   "body_ar": "حدث وهمي لاختبار التقويم والمرشحات."
+  },
+  {
+   "id": "pu-d2",
+   "kind": "event",
+   "daysFromNow": 8,
+   "subject": "",
+   "group": "",
+   "demo": true,
+   "title_fr": "Exemple : atelier CV",
+   "title_en": "Example: CV workshop",
+   "title_ar": "مثال: ورشة السيرة الذاتية",
+   "body_fr": "Événement fictif. Aucune date officielle.",
+   "body_en": "Fictional event. No official date.",
+   "body_ar": "حدث وهمي. بلا تاريخ رسمي."
+  },
+  {
+   "id": "pu-d3",
+   "kind": "reminder",
+   "daysFromNow": 2,
+   "subject": "Analyse 1",
+   "group": "G2",
+   "demo": true,
+   "title_fr": "Exemple : rappel de devoir",
+   "title_en": "Example: homework reminder",
+   "title_ar": "مثال: تذكير بواجب",
+   "body_fr": "Rappel fictif de rendu d'exercices. Ne correspond à aucun devoir réel.",
+   "body_en": "Fictional exercise-submission reminder. Matches no real assignment.",
+   "body_ar": "تذكير وهمي بتسليم تمارين. لا يطابق أي واجب حقيقي."
+  },
+  {
+   "id": "pu-d4",
+   "kind": "reminder",
+   "daysFromNow": 5,
+   "subject": "Mécanique",
+   "group": "G2",
+   "demo": true,
+   "title_fr": "Exemple : contrôle à préparer",
+   "title_en": "Example: test to prepare",
+   "title_ar": "مثال: اختبار للتحضير",
+   "body_fr": "Exemple fictif de rappel de contrôle.",
+   "body_en": "Fictional test reminder example.",
+   "body_ar": "مثال وهمي لتذكير باختبار."
+  },
+  {
+   "id": "pu-d5",
+   "kind": "schedule",
+   "daysFromNow": 1,
+   "subject": "Algèbre 1",
+   "group": "G2",
+   "demo": true,
+   "title_fr": "Exemple : changement d'horaire (fictif)",
+   "title_en": "Example: schedule change (fictional)",
+   "title_ar": "مثال: تغيير توقيت (وهمي)",
+   "body_fr": "Simulation d'une annonce de changement d'emploi du temps. NON RÉELLE : l'emploi du temps institutionnel n'est jamais modifié ici.",
+   "body_en": "Simulated schedule-change notice. NOT REAL: the institutional timetable is never modified here.",
+   "body_ar": "محاكاة إعلان تغيير توقيت. غير حقيقي: جدول المعهد لا يُعدَّل هنا."
+  },
+  {
+   "id": "pu-d6",
+   "kind": "room",
+   "daysFromNow": 1,
+   "subject": "Atelier Programmation 1",
+   "group": "G2",
+   "demo": true,
+   "title_fr": "Exemple : alerte de salle (fictive)",
+   "title_en": "Example: room alert (fictional)",
+   "title_ar": "مثال: تنبيه قاعة (وهمي)",
+   "body_fr": "Simulation d'une alerte de salle. NON RÉELLE : vérifiez toujours l'affichage officiel.",
+   "body_en": "Simulated room alert. NOT REAL: always check the official display.",
+   "body_ar": "محاكاة تنبيه قاعة. غير حقيقي: تحقق دائما من اللوحة الرسمية."
+  },
+  {
+   "id": "pu-d7",
+   "kind": "news",
+   "daysFromNow": 0,
+   "subject": "",
+   "group": "",
+   "demo": true,
+   "title_fr": "Exemple : actualité de démonstration",
+   "title_en": "Example: demo news",
+   "title_ar": "مثال: خبر تجريبي",
+   "body_fr": "Actualité fictive pour illustrer le fil.",
+   "body_en": "Fictional news item to illustrate the feed.",
+   "body_ar": "خبر وهمي لتوضيح الخلاصة."
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "_comment": "DONNÉES FICTIVES de démonstration (Smart Attendance). Aucun étudiant réel. Les matières réutilisées proviennent de data/timetable.json.",
+ "students": [
+  {
+   "id": "demo-stu-01",
+   "name": "Étudiant fictif 01",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-02",
+   "name": "Étudiant fictif 02",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-03",
+   "name": "Étudiant fictif 03",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-04",
+   "name": "Étudiant fictif 04",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-05",
+   "name": "Étudiant fictif 05",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-06",
+   "name": "Étudiant fictif 06",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-07",
+   "name": "Étudiant fictif 07",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-08",
+   "name": "Étudiant fictif 08",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-09",
+   "name": "Étudiant fictif 09",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-10",
+   "name": "Étudiant fictif 10",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-11",
+   "name": "Étudiant fictif 11",
+   "demo": true
+  },
+  {
+   "id": "demo-stu-12",
+   "name": "Étudiant fictif 12",
+   "demo": true
+  }
+ ],
+ "pastSessions": [
+  {
+   "id": "demo-past-1",
+   "subject": "Analyse 1",
+   "daysAgo": 2,
+   "start": "08:00",
+   "status": "present"
+  },
+  {
+   "id": "demo-past-2",
+   "subject": "Algèbre 1",
+   "daysAgo": 2,
+   "start": "11:20",
+   "status": "late"
+  },
+  {
+   "id": "demo-past-3",
+   "subject": "ASD",
+   "daysAgo": 3,
+   "start": "08:00",
+   "status": "present"
+  },
+  {
+   "id": "demo-past-4",
+   "subject": "Mécanique",
+   "daysAgo": 5,
+   "start": "09:40",
+   "status": "absent"
+  },
+  {
+   "id": "demo-past-5",
+   "subject": "Circuits Electriques",
+   "daysAgo": 6,
+   "start": "08:00",
+   "status": "present"
+  }
+ ]
+}
