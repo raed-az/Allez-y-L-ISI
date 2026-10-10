@@ -245,3 +245,40 @@ les membres et leurs emails (n'ajoutez que des informations fournies).
 ---
 
 © 2026 Allez-y à l'ISI — Projet indépendant, en cours de développement.
+
+
+---
+
+# 🚀 Évolution « Campus » — 11 nouveaux modules
+
+Cette version ajoute 11 modules **sans supprimer ni renommer** les pages existantes (seuls `index.html` et `js/app.js` ont été modifiés : menu groupé, routes des modules, accessibilité des modales).
+Le site reste **100 % statique** (HTML/CSS/JS/JSON), compatible GitHub Pages, sans serveur ni CDN.
+
+| Module | Route | Fichier |
+|---|---|---|
+| Smart Attendance | `#/attendance` | `js/modules/attendance.js` |
+| Campus Life RPG (profil de gamification commun) | `#/rpg` | `js/modules/rpg.js` |
+| Smart Campus Navigator | `#/navigator` | `js/modules/navigator.js` |
+| Exam Survival Mode | `#/exam` | `js/modules/exam.js` |
+| ISI Skill Exchange | `#/skills` | `js/modules/skills.js` |
+| EcoCampus | `#/eco` | `js/modules/eco.js` |
+| Personal Study Copilot | `#/copilot` | `js/modules/copilot.js` |
+| Campus Pulse | `#/pulse` | `js/modules/pulse.js` |
+| University Life Simulator | `#/simulator` | `js/modules/simulator.js` |
+| Lost & Found ISI | `#/lostfound` | `js/modules/lostfound.js` |
+| ISI Innovation Lab | `#/innovation` | `js/modules/innovation.js` |
+
+Socle commun : `js/modules/core.js` (stockage `x_*`, ledgers XP/EcoPoints/crédits séparés, anti-doublon, i18n, CSV, validation, anti-XSS).
+Données de démonstration (fictives) : `data/demo/*.json`. Bibliothèques locales : `js/vendor/` (qrcode-generator MIT, jsQR Apache-2.0).
+
+## Installation / déploiement GitHub Pages
+1. Décompressez l'archive, poussez le dossier dans un dépôt GitHub.
+2. *Settings → Pages* : branche `main`, dossier `/ (root)`.
+3. Le site fonctionne depuis un sous-chemin (`https://user.github.io/depot/`) : tous les chemins sont relatifs.
+4. Test local : `python3 -m http.server 8000` puis http://localhost:8000 (la caméra exige HTTPS ou localhost).
+
+## Documentation
+- `docs/FEATURES.md` — ce qui est réellement opérationnel / simulé / futur, fichiers ajoutés et modifiés.
+- `docs/TESTING.md` — guide de test de chaque module + résultats des tests exécutés.
+- `docs/BACKEND.md` — passage à un vrai système (authentification, présences, votes, IA…).
+- `tests/` — scripts Playwright (Python) utilisés pour la vérification (facultatifs, non requis au déploiement).
