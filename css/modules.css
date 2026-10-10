@@ -1,0 +1,114 @@
+/* =====================================================
+   MODULES.CSS — Styles des modules « Campus » (additif)
+   Réutilise uniquement les variables de themes.css.
+   Logique CSS (margin-inline, etc.) pour le RTL arabe.
+   ===================================================== */
+:root { --eco: #1fa971; --eco-soft: #e4f8ef; --eco-dark: #148457; }
+[data-theme="dark"] { --eco: #38c98d; --eco-soft: rgba(56,201,141,.14); --eco-dark: #38c98d; }
+
+.x-module { max-width: 1100px; }
+.x-sub { color: var(--text-secondary); margin: -6px 0 14px; font-size: 14px; }
+.x-banner { margin-bottom: 14px; font-size: 13px; line-height: 1.5; }
+.x-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-bottom: 14px; }
+.x-grid-2 { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); margin-bottom: 14px; }
+.x-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.x-row.between { justify-content: space-between; }
+.x-stack > * + * { margin-top: 10px; }
+.x-muted { color: var(--text-muted); font-size: 12.5px; }
+.x-big { font-size: 28px; font-weight: 800; line-height: 1.1; }
+.x-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+.x-tabs { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 14px; border-bottom: 1px solid var(--border-color); scrollbar-width: thin; }
+.x-tab { border: 0; background: transparent; color: var(--text-secondary); padding: 9px 13px; border-radius: 8px 8px 0 0; cursor: pointer; font-weight: 600; font-size: 13.5px; white-space: nowrap; border-bottom: 2px solid transparent; }
+.x-tab:hover { background: var(--bg-hover); }
+.x-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.x-tab:focus-visible, .btn:focus-visible, .x-opt:focus-visible, .nav-item:focus-visible, .x-icon-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.x-chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 11.5px; font-weight: 700; background: var(--accent-soft); color: var(--accent); margin-inline-end: 4px; }
+.x-chip.ok { background: var(--success-soft); color: var(--success); }
+.x-chip.warn { background: var(--warning-soft); color: var(--warning); }
+.x-chip.bad { background: var(--danger-soft); color: var(--danger); }
+.x-chip.eco { background: var(--eco-soft); color: var(--eco-dark); }
+.x-chip.demo { background: var(--bg-surface-alt); color: var(--text-muted); border: 1px dashed var(--border-strong); }
+
+.x-bar { height: 10px; background: var(--bg-surface-alt); border: 1px solid var(--border-color); border-radius: 999px; overflow: hidden; }
+.x-bar-fill { height: 100%; background: var(--accent); border-radius: 999px; transition: width .5s ease; }
+.x-bar.eco .x-bar-fill, .eco .x-bar-fill { background: var(--eco); }
+
+.x-field-row { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.x-module .field select, .x-module .field input, .x-module .field textarea { width: 100%; }
+.x-module [aria-invalid="true"] { border-color: var(--danger) !important; }
+.x-danger { background: var(--danger) !important; border-color: var(--danger) !important; }
+.x-icon-btn { border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-primary); border-radius: 8px; padding: 5px 9px; cursor: pointer; }
+.x-icon-btn:hover { background: var(--bg-hover); }
+.x-star.on { color: #f0b429; }
+
+.x-list-item { display: flex; gap: 12px; justify-content: space-between; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--border-color); flex-wrap: wrap; }
+.x-list-item:last-child { border-bottom: 0; }
+.x-list-item .x-main { flex: 1 1 220px; min-width: 0; overflow-wrap: anywhere; }
+.x-list-item .x-title { font-weight: 700; }
+.x-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.x-table-wrap { overflow-x: auto; }
+.x-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.x-table th, .x-table td { padding: 8px 10px; text-align: start; border-bottom: 1px solid var(--border-color); }
+.x-table th { color: var(--text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: .03em; }
+
+/* QR / scanner */
+.x-qr { background: #fff; padding: 12px; border-radius: 12px; display: inline-block; box-shadow: var(--shadow-sm); line-height: 0; }
+.x-qr svg, .x-qr img { width: min(280px, 70vw); height: auto; }
+.x-countdown { font-size: 40px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.x-video-box { position: relative; background: #000; border-radius: 12px; overflow: hidden; max-width: 420px; aspect-ratio: 4/3; }
+.x-video-box video { width: 100%; height: 100%; object-fit: cover; }
+.x-status { padding: 12px 14px; border-radius: 10px; font-weight: 600; margin: 10px 0; }
+.x-status.ok { background: var(--success-soft); color: var(--success); }
+.x-status.bad { background: var(--danger-soft); color: var(--danger); }
+.x-status.warn { background: var(--warning-soft); color: var(--warning); }
+.x-status.info { background: var(--info-soft); color: var(--info); }
+
+/* Quiz / choix */
+.x-opt { display: block; width: 100%; text-align: start; padding: 10px 12px; border: 1px solid var(--border-strong); border-radius: 10px; background: var(--bg-surface); color: var(--text-primary); margin: 6px 0; cursor: pointer; font-size: 14px; }
+.x-opt:hover { background: var(--bg-hover); }
+.x-opt.sel { border-color: var(--accent); background: var(--accent-soft); }
+.x-opt.right { border-color: var(--success); background: var(--success-soft); }
+.x-opt.wrong { border-color: var(--danger); background: var(--danger-soft); }
+
+/* Planning hebdo */
+.x-week { display: grid; grid-template-columns: repeat(5, minmax(150px, 1fr)); gap: 8px; overflow-x: auto; }
+.x-day { background: var(--bg-surface-alt); border: 1px solid var(--border-color); border-radius: 10px; padding: 8px; min-height: 120px; }
+.x-day h4 { margin: 0 0 6px; font-size: 13px; }
+.x-block { border-radius: 8px; padding: 6px 8px; margin-bottom: 6px; font-size: 12.5px; border-inline-start: 4px solid var(--accent); background: var(--bg-surface); }
+.x-block.course { border-color: var(--badge-ci); }
+.x-block.revision { border-color: var(--success); }
+.x-block.exam { border-color: var(--danger); }
+.x-block.task { border-color: var(--warning); }
+.x-block.conflict { outline: 2px solid var(--danger); }
+
+/* Arbre EcoCampus */
+.x-tree { width: min(260px, 60vw); height: auto; display: block; margin: 0 auto; }
+.x-tree .sway { transform-origin: 50% 100%; animation: x-sway 5s ease-in-out infinite; }
+@keyframes x-sway { 0%,100% { transform: rotate(-1.2deg); } 50% { transform: rotate(1.2deg); } }
+
+/* Navigator */
+.x-floorplan { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); }
+.x-room { padding: 12px 6px; text-align: center; border: 1px solid var(--border-strong); border-radius: 10px; background: var(--bg-surface); cursor: pointer; font-weight: 700; color: var(--text-primary); }
+.x-room.hl { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.x-steps { counter-reset: s; list-style: none; padding: 0; }
+.x-steps li { counter-increment: s; padding: 8px 0 8px 34px; position: relative; }
+html[dir="rtl"] .x-steps li { padding: 8px 34px 8px 0; }
+.x-steps li::before { content: counter(s); position: absolute; inset-inline-start: 0; top: 6px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; display: grid; place-items: center; }
+
+@media (max-width: 480px) {
+  .x-countdown { font-size: 32px; }
+  .x-big { font-size: 24px; }
+  .x-list-item { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .x-tree .sway, .x-bar-fill { animation: none !important; transition: none !important; }
+  html:focus-within { scroll-behavior: auto; }
+}
+
+/* Menu latéral plus long (5 groupes) : défilement interne */
+.sidebar { overflow: hidden; }
+.sidebar-nav { overflow-y: auto; min-height: 0; overscroll-behavior: contain; }
+.nav-item { cursor: pointer; }
